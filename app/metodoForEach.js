@@ -1,6 +1,7 @@
 const elementoParaInserirLivros = document.getElementById("livros");
 
 function exibirLivrosNaTela(listaLivros) {
+  elementoParaInserirLivros.innerHTML = ""; // Limpa o conteúdo anterior
   listaLivros.forEach((livro) => {
     elementoParaInserirLivros.innerHTML += `
     <div class="livro">
